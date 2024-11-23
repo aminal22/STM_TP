@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"tp1b\startup_stm32f429xx.o"
+"tp1b\main.o"
+"tp1b\stm32f4xx_it.o"
+"tp1b\stm32f4xx_hal_msp.o"
+"tp1b\stm32f4xx_hal_tim.o"
+"tp1b\stm32f4xx_hal_tim_ex.o"
+"tp1b\stm32f4xx_hal_rcc.o"
+"tp1b\stm32f4xx_hal_rcc_ex.o"
+"tp1b\stm32f4xx_hal_flash.o"
+"tp1b\stm32f4xx_hal_flash_ex.o"
+"tp1b\stm32f4xx_hal_flash_ramfunc.o"
+"tp1b\stm32f4xx_hal_gpio.o"
+"tp1b\stm32f4xx_hal_dma_ex.o"
+"tp1b\stm32f4xx_hal_dma.o"
+"tp1b\stm32f4xx_hal_pwr.o"
+"tp1b\stm32f4xx_hal_pwr_ex.o"
+"tp1b\stm32f4xx_hal_cortex.o"
+"tp1b\stm32f4xx_hal.o"
+"tp1b\stm32f4xx_hal_exti.o"
+"tp1b\system_stm32f4xx.o"
+--strict --scatter "TP1b\TP1b.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TP1b.map" -o TP1b\TP1b.axf

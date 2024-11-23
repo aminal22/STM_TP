@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"tp1a_uart\startup_stm32f429xx.o"
+"tp1a_uart\main.o"
+"tp1a_uart\stm32f4xx_it.o"
+"tp1a_uart\stm32f4xx_hal_msp.o"
+"tp1a_uart\stm32f4xx_hal_tim.o"
+"tp1a_uart\stm32f4xx_hal_tim_ex.o"
+"tp1a_uart\stm32f4xx_hal_uart.o"
+"tp1a_uart\stm32f4xx_hal_rcc.o"
+"tp1a_uart\stm32f4xx_hal_rcc_ex.o"
+"tp1a_uart\stm32f4xx_hal_flash.o"
+"tp1a_uart\stm32f4xx_hal_flash_ex.o"
+"tp1a_uart\stm32f4xx_hal_flash_ramfunc.o"
+"tp1a_uart\stm32f4xx_hal_gpio.o"
+"tp1a_uart\stm32f4xx_hal_dma_ex.o"
+"tp1a_uart\stm32f4xx_hal_dma.o"
+"tp1a_uart\stm32f4xx_hal_pwr.o"
+"tp1a_uart\stm32f4xx_hal_pwr_ex.o"
+"tp1a_uart\stm32f4xx_hal_cortex.o"
+"tp1a_uart\stm32f4xx_hal.o"
+"tp1a_uart\stm32f4xx_hal_exti.o"
+"tp1a_uart\system_stm32f4xx.o"
+--strict --scatter "TP1a_UART\TP1a_UART.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TP1a_UART.map" -o TP1a_UART\TP1a_UART.axf
